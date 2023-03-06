@@ -1,0 +1,27 @@
+1. Installation at https://tailwindcss.com/docs/installation
+2. Install tailwind intellisense extension
+
+Modifying config.ts file theme section -> define your own configuration for color pallete, fonts, breakpoints, etc.
+module.exports = {
+  theme: {
+    screens: {
+      sm: '480px',
+     
+    },
+    colors: {
+      'blue': '#1fb6ff',
+     
+    },
+    fontFamily: {
+      sans: ['Graphik', 'sans-serif'],
+    },
+    extend: {
+      spacing: {
+        '128': '32rem',
+      },
+      borderRadius: {
+        '4xl': '2rem',
+      }
+    }
+  }
+}

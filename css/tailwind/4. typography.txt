@@ -1,0 +1,123 @@
+Font family
+    a. font-sans    <-->  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    b. font-serif	<-->  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    c. font-mono	<-->  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+Font size
+    a. text-xs   <--> font-size: 0.75rem;  line-height: 1rem;   
+    b. text-sm	 <--> font-size: 0.875rem; line-height: 1.25rem;
+    c. text-base <--> font-size: 1rem;     line-height: 1.5rem; 
+    d. text-lg	 <--> font-size: 1.125rem; line-height: 1.75rem; 
+    e. text-xl	 <--> font-size: 1.25rem;  line-height: 1.75rem; 
+    f. text-2xl	 <--> font-size: 1.5rem;   line-height: 2rem; 
+    g. text-3xl	 <--> font-size: 1.875rem; line-height: 2.25rem; 
+    h. text-4xl	 <--> font-size: 2.25rem;  line-height: 2.5rem;
+    i. text-5xl	 <--> font-size: 3rem;     line-height: 1;
+    j. text-6xl	 <--> font-size: 3.75rem;  line-height: 1;
+    k. text-7xl	 <--> font-size: 4.5rem;   line-height: 1;
+    l. text-8xl	 <--> font-size: 6rem;     line-height: 1;
+    m. text-9xl	 <--> font-size: 8rem;     line-height: 1;
+
+Font style
+    a. italic	   <--> font-style: italic;
+    b. not-italic  <-->	font-style: normal;
+
+Font weight
+    a. font-thin	    <-->	font-weight: 100;
+    b. font-extralight  <-->	font-weight: 200;
+    c. font-light	    <-->	font-weight: 300;
+    d. font-normal	    <-->	font-weight: 400;
+    e. font-medium	    <-->	font-weight: 500;
+    f. font-semibold	<-->	font-weight: 600;
+    g. font-bold	    <-->	font-weight: 700;
+    h. font-extrabold	<-->	font-weight: 800;
+    i. font-black	    <-->	font-weight: 900;
+
+Font variants
+    a. normal-nums	       <-->   font-variant-numeric: normal;             (shows normal)
+    b. ordinal	           <-->   font-variant-numeric: ordinal;            (show text as power)
+    c. slashed-zero	       <-->   font-variant-numeric: slashed-zero;       (puts a point in 0 to differentiate from O)
+    d. lining-nums	       <-->   font-variant-numeric: lining-nums;
+    e. oldstyle-nums	   <-->   font-variant-numeric: oldstyle-nums;
+    f. proportional-nums   <-->   font-variant-numeric: proportional-nums;
+    g. tabular-nums	       <-->   font-variant-numeric: tabular-nums;
+    h. diagonal-fractions  <-->   font-variant-numeric: diagonal-fractions; (show 3/4 as a fraction mathematically)
+    i. stacked-fractions   <-->   font-variant-numeric: stacked-fractions;  (show 3/4 as a fraction mathematically)
+
+Line height
+    a. leading-3	    <-->   line-height: .75rem; 
+    b. leading-4	    <-->   line-height: 1rem;
+    c. leading-5	    <-->   line-height: 1.25rem; 
+    d. leading-6	    <-->   line-height: 1.5rem; 
+    e. leading-7	    <-->   line-height: 1.75rem;
+    f. leading-8	    <-->   line-height: 2rem;
+    g. leading-9	    <-->   line-height: 2.25rem;
+    h. leading-10	    <-->   line-height: 2.5rem;
+    i. leading-none	    <-->   line-height: 1;
+    j. leading-tight	<-->   line-height: 1.25;
+    k. leading-snug	    <-->   line-height: 1.375;
+    l. leading-normal	<-->   line-height: 1.5;
+    m. leading-relaxed	<-->   line-height: 1.625;
+    n. leading-loose	<-->   line-height: 2;
+
+List type
+    a. list-none        <-->	list-style-type: none;
+    b. list-disc    	<-->    list-style-type: disc;
+    c. list-decimal	    <-->    list-style-type: decimal;
+
+List position
+    a. list-inside	    <-->    list-style-position: inside;
+    b. list-outside	    <-->    list-style-position: outside;
+
+Text align
+    a. text-left	    <-->    text-align: left;
+    b. text-center	    <-->    text-align: center;
+    c. text-right	    <-->    text-align: right;
+    d. text-justify	    <-->    text-align: justify;
+    e. text-start	    <-->    text-align: start;
+    f. text-end	        <-->    text-align: end;
+
+Vertical align
+    a. align-baseline	    <-->    vertical-align: baseline;
+    b. align-top	        <-->    vertical-align: top;
+    c. align-middle         <-->	vertical-align: middle;
+    d. align-bottom	        <-->    vertical-align: bottom;
+    e. align-text-top	    <-->    vertical-align: text-top;
+    f. align-text-bottom	<-->    vertical-align: text-bottom;
+    g. align-sub	        <-->    vertical-align: sub;
+
+Text color
+    a. text-{color}-{value} <--> color: ...;
+    b. text-transparent     <--> color: transparent;
+    c. text-white           <--> color: white;
+    d. text-black           <--> color: black;
+
+Text decoration
+    a. underline	    <-->    text-decoration-line: underline;
+    b. overline	        <-->    text-decoration-line: overline;
+    c. line-through	    <-->    text-decoration-line: line-through;
+    d. no-underline	    <-->    text-decoration-line: none;
+
+Text transform 
+    a. uppercase	    <-->    text-transform: uppercase;
+    b. lowercase    	<-->    text-transform: lowercase;
+    c. capitalize	    <-->    text-transform: capitalize;
+    d. normal-case	    <-->    text-transform: none;
+
+Text overflow
+    a. truncate         <-->	overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    b. text-ellipsis	<-->    text-overflow: ellipsis;
+    c. text-clip   	    <-->    text-overflow: clip;
+
+Whitespaces
+    a. whitespace-normal    <-->	white-space: normal;   (spaces and newlines are ignored, text is wrapped)
+    b. whitespace-nowrap	<-->    white-space: nowrap;   (spaces and newlines are ignored, text is not wrapped)
+    c. whitespace-pre	    <-->    white-space: pre;      (spaces and newlines are not ignored, text is not wrapped)
+    d. whitespace-pre-line	<-->    white-space: pre-line; (spaces are ignored, newlines are not ignored, text is wrapped)
+    e. whitespace-pre-wrap	<-->    white-space: pre-wrap; (spaces and newlines are not ignored, text is wrapped)
+
+Word break
+    a. break-normal <-->    overflow-wrap: normal; word-break: normal; 
+    b. break-words  <-->	overflow-wrap: break-word;
+    c. break-all	<-->    word-break: break-all;
+    d. break-keep	<-->    word-break: keep-all;

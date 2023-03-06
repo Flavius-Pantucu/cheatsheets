@@ -1,0 +1,108 @@
+Flex Basis
+    a. basis-auto  <--> flex-basis: auto;
+    b. basis-px    <--> flex-basis: 1px;
+    c. basis-full  <--> flex-basis: 100%;
+    d. basis-{y}   <--> flex-basis: {y}%;
+        y -> {1/2, 1/3, 2/3, 1/4, 2/4, 3/4, 1/5, ...4/5, 1/6, ...5/6, 1/12, ...11/12}
+    e. basis-{x}   <--> flex-basis: {x}rem;
+        x -> {1, 2, 3, 4, 5, 6... same as Top/Left/Bottom/Right (1.layout)}
+    NOTES: Controls the initial size of flex items
+
+Flex Direction
+    a. flex-row	        <--> flex-direction: row;            (items positioned horizontally left to right)
+    b. flex-row-reverse	<--> flex-direction: row-reverse;    (items positioned horizontally right to left)   
+    c. flex-col	        <--> flex-direction: column;         (items positioned vertically top to bottom)
+    d. flex-col-reverse	<--> flex-direction: column-reverse; (items positioned vertically bottom to top)
+
+Flex Wrap
+    a. flex-wrap    	  <--> flex-wrap: wrap;         (normal wrapping)
+    b. flex-wrap-reverse  <--> flex-wrap: wrap-reverse; (reverse wrapping)
+    c. flex-nowrap	      <--> flex-wrap: nowrap;       (prevent flex items from wrapping, causing overflow)
+
+Flex
+    a. flex-1       <--> flex: 1 1 0%;   (allow a flex item to grow and shrink, ignoring its initial size)
+    b. flex-auto	<--> flex: 1 1 auto; (allow a flex item to grow and shrink, taking into account its initial size)
+    c. flex-initial	<--> flex: 0 1 auto; (allow a flex item to shrink but not grow)
+    d. flex-none	<--> flex: none;     (prevent a flex item from growing or shrinking)
+
+Flex Grow
+    a. grow   <--> flex-grow: 1; (allow a flex item to grow to fill any available space)
+    b. grow-0 <--> flex-grow: 0; (prevent a flex item to grow to fill any available space)
+
+Flex Shrink
+    a. shrink   <--> flex-shrink: 1; (allow a flex item to shrink if needed)
+    b. shrink-0 <--> flex-shrink: 0; (prevent a flex item from shrinking)
+
+Order
+    a. order-{1-12} <--> order: {1-12}; (render flex and grid items in a different order than they appear in the DOM)
+    b. order-first	<--> order: -9999;
+    c. order-last	<--> order: 9999;
+    d. order-none	<--> order: 0;
+
+Grid Columns
+    a. grid-cols-{x} <--> grid-template-columns: repeat({x}, minmax(0, 1fr)); (utilities to create grids with n equally sized columns)
+    c. col-span-{x}  <--> grid-column : span {x} / span {x}; (utilities to make an element span n columns)
+    e. col-start-{x} <--> grid-column-start: {x};            (utilities to make an element start or end at the nth grid line)
+    f. col-end-{x}   <--> grid-column-end: {x};              (utilities to make an element start or end at the nth grid line)
+    NOTES
+        x -> {1, ..., 12}
+
+Grid Rows
+    a. grid-rows-{x} <--> grid-template-rows: repeat(1, minmax(0, 1fr)); (utilities to create grids with n equally sized rows)
+    c. row-span-{x}  <--> grid-row : span {x} / span {x}; (utilities to make an element span n rows)
+    e. row-start-{x} <--> grid-row-start: {x};            (utilities to make an element start or end at the nth grid line)
+    f. row-end-{x}   <--> grid-row-end: {x};              (utilities to make an element start or end at the nth grid line)
+    NOTES
+        x -> {1, ..., 6}
+
+Gap
+    a. gap-{x}   <--> gap: {x/4}rem;
+    b. gap-x-{x} <--> column-gap: {x/4}rem;
+    c. gap-y-{x} <--> row-gap: {x/4}rem;
+
+Justify Content
+    a. justify-start	<--> justify-content: flex-start;     (align left x axis)
+    b. justify-end	    <--> justify-content: flex-end;       (align right x axis)
+    c. justify-center	<--> justify-content: center;         (align center x axis)
+    d. justify-between	<--> justify-content: space-between;  (justify items X----X----X)
+    e. justify-around	<--> justify-content: space-around;   (justify items -X---X---X-)
+    f. justify-evenly	<--> justify-content: space-evenly;   (justify items --X--X--X--)
+
+Justify Items 
+    a. justify-items-start	 <--> justify-items: start;   (align left x axis)
+    b. justify-items-end	 <--> justify-items: end;     (align right x axis)
+    c. justify-items-center	 <--> justify-items: center;  (align center x axis)
+    d. justify-items-stretch <--> justify-items: stretch; (stretch items along x axis)
+
+Justify Self (overwrites justify-items value)
+    a. justify-self-auto	<--> justify-self: auto;   (align an item based on the value of the grid’s justify-items property)
+    b. justify-self-start	<--> justify-self: start;
+    c. justify-self-end	    <--> justify-self: end;
+    d. justify-self-center	<--> justify-self: center;
+    e. justify-self-stretch	<--> justify-self: stretch;
+
+Align Content
+    a. content-center	align-content: center;          (align center y axis)
+    b. content-start	align-content: flex-start;      (align top y axis)
+    c. content-end	    align-content: flex-end;        (align bottom y axis)
+    d. content-between	align-content: space-between;   (same as justify-between, but on y axis)
+    e. content-around	align-content: space-around;    (same as justify-around, but on y axis)
+    f. content-evenly	align-content: space-evenly;    (same as justify-evenly, but on y axis)
+
+Align Items
+    a. items-start	    <--> align-items: flex-start; (align left y axis)
+    b. items-end	    <--> align-items: flex-end;   (align rigth y axis)
+    c. items-center	    <--> align-items: center;     (align left y axis)
+    e. items-stretch	<--> align-items: stretch;    (stretch items along y axis)
+
+Align Self
+    a. self-auto	<--> align-self: auto;       (align an item based on the value of the grid’s align-items property)
+    b. self-start	<--> align-self: flex-start;
+    c. self-end	    <--> align-self: flex-end;
+    d. self-center	<--> align-self: center;
+    e. self-stretch	<--> align-self: stretch;
+
+Place content, items, self -> alignes on x & y axis at the same time
+    a. place-content-...
+    b. place-items-...
+    c. place-self-...

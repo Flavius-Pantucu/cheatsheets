@@ -1,0 +1,103 @@
+LAYOUT
+
+Aspect Ratio
+  a. aspect-auto    <--> aspect-ratio: auto;
+  b. aspect-square  <--> aspect-ratio: 1 / 1;
+  c. aspect-video   <--> aspect-ratio: 16 / 9;
+
+Container
+  a. container      <--> width: 100%; (with breakpoints sm,md,lg,xl,2xl)
+
+Columns
+  a. columns-{1-12}  <--> columns: {1-12};  (number of columns within an element)
+  b. columns-{width} <--> columns: {width}; width: [3xs, 2xs, xs, sm, md, lg, xl, ..., 7xl] (each column is the size of width written)
+  NOTES:
+    i. gap-x -> gap between columns (gap-8 columns-4)
+    ii. cannot apply both types at once (columns-3 columns-xl WRONG)
+
+Box Sizing
+  a. box-border    <--> box-sizing: border-box;
+  b. box-content   <--> box-sizing: content-box;
+
+Display
+  a. block        -> (takes the whole line, nothing else is rendered)
+  b. inline-block -> (wrap in the same line, can't be displayed in multiple lines)
+  c. inline       -> (wrap normally, can be displayed in multiple lines)
+  d. flex
+  e. inline-flex
+  f. table        -> (defines table-row, table-cell, table-caption, table-column, table-column-group, table-header-group, table-row-group, and table-footer-group)
+  g. inline-table -> (multiple tables in the same line)
+  h. grid         -> (grid-cols-x grid-rows-y)
+  i. inline-grid  -> (multiple grids on the same line)
+  j. hidden       -> (hides an element, even from the DOM)
+
+Floats
+  a. float-right  <--> float: right;
+  b. float-left   <--> float: left;
+  c. float-none   <--> float: none;
+
+Clear
+  a. clear-left	  <--> clear: left;
+  b. clear-right	<--> clear: right;
+  c. clear-both	  <--> clear: both;
+  d. clear-none	  <--> clear: none;
+
+Object Fit
+  a. object-contain     <--> object-fit: contain; (rezise to stay contained)
+  b. object-cover	      <--> object-fit: cover;
+  c. object-fill	      <--> object-fit: fill;  (fills the container)
+  d. object-none	      <--> object-fit: none;
+  e. object-scale-down	<--> object-fit: scale-down; (scaling down if too large)
+
+Overflow
+  a. overflow-auto	  <--> overflow: auto;    (shows scrollbar if needed)
+  b. overflow-hidden	<--> overflow: hidden;  (always hides overflow)
+  d. overflow-visible	<--> overflow: visible; (always shows overflow)
+  e. overflow-scroll	<--> overflow: scroll;  (always shows scrollbar)
+  NOTES
+    i. same for x or y axis
+
+Overscroll
+  a. overscroll-auto	  <--> overscroll-behavior: auto;    (if reached end of scroll, continue scrolling the parent)
+  b. overscroll-contain	<--> overscroll-behavior: contain; (if reached end of scroll, do nothing if keep scrolling)
+  c. overscroll-none	  <--> overscroll-behavior: none;    (same as contain, but has bounce effect)
+
+Position
+  a. static	   <--> position: static;   (any offset will be ignored, eg. ABSOLUTE position will not have a reference for static parent)
+  b. fixed	   <--> position: fixed;    (fixed to a position no matter what)
+  c. absolute	 <--> position: absolute; 
+  d. relative	 <--> position: relative; (any offset won't be ignored, eg. ABSOLUTE position will have a reference for relative parent)
+  e. sticky	   <--> position: sticky;   (fixed to a position until crossing a threshold)
+
+Top/ Right / Bottom / Left
+  a. inset-0     <--> top: 0px; right: 0px; bottom: 0px; left: 0px;
+  b. inset-x-0   <--> left:0px, right: 0px;
+  c. inset-y-0   <--> top:0px, bottom:0px;
+  d. top-0       <--> top:0px;
+  e. right-0     <--> right:0px;
+  f. bottom-0    <--> bottom:0px;
+  g. left-0      <--> left:0px;
+  NOTES (other values rather than 0)
+    i.    px -> 1px;
+    ii.   0.5, 1.5, 2.5, 3.5           -> 0.125rem, 0.375rem, 0.625rem, 0.875rem;
+    iii.  1, 2, 3... 11, 12            -> 0.25rem, 0.5rem, 0.75rem...2.75rem, 3rem;
+    iv.   14                           -> 3.5rem;
+    v.    16, 20, 24... 60, 64         -> 4rem, 5rem, 6rem...15rem, 16rem;
+    vi.   72, 80, 96                   -> 18rem, 20rem, 24rem;
+    vii.  auto                         -> auto;
+    viii. 1/2, 1/3, 2/3, 1/4, 2/4, 3/4 -> 50%, 33.33%, 66.66%, 25%, 50%, 75%;
+    ix.   full                         -> full;
+    x. You can you negative values (eg. -top-4, -right-1/2)  
+
+Visibility
+  a. visible   <-->	visibility: visible;  (default value)
+  b. invisible <-->	visibility: hidden;   (hide an element, but keeps in DOM)
+  c. collapse	 <--> visibility: collapse; (hide table rows, columns)
+
+Z-Index
+  a. z-{0, 10, 20, 30, 40, 50} <--> z-index: {0, 10, 20, 30, 40, 50};
+  b. z-auto                    <--> z-index: auto;
+
+
+NOTES
+  a. You can use breakpoints or hover to modify any value !!

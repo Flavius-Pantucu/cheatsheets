@@ -1,0 +1,53 @@
+Background attachment
+    a. bg-fixed	 <--> background-attachment: fixed;
+    b. bg-local	 <--> background-attachment: local;
+    c. bg-scroll <--> background-attachment: scroll;
+
+Background clip
+    a. bg-clip-border   <-->	background-clip: border-box;
+    b. bg-clip-padding	<-->    background-clip: padding-box;
+    c. bg-clip-content	<-->    background-clip: content-box;
+    d. bg-clip-text	    <-->    background-clip: text;
+
+Background color
+    a. bg-{color}-{value} <--> color: ...;
+    b. bg-transparent     <--> color: transparent;
+    c. bg-white           <--> color: white;
+    d. bg-black           <--> color: black;
+
+Background origin
+    a. bg-origin-border     <-->	background-origin: border-box;
+    b. bg-origin-padding	<-->    background-origin: padding-box;
+    c. bg-origin-content	<-->    background-origin: content-box;
+
+Background position
+    a. bg-{position}    <-->    background-position: center;
+
+Background repeat
+    a. bg-repeat        <-->	background-repeat: repeat;
+    b. bg-no-repeat	    <-->    background-repeat: no-repeat;
+    c. bg-repeat-x      <-->    background-repeat: repeat-x;
+    d. bg-repeat-y  	<-->    background-repeat: repeat-y;
+    e. bg-repeat-round	<-->    background-repeat: round;
+    f. bg-repeat-space	<-->    background-repeat: space;
+
+Background size
+    a. bg-auto      <-->	background-size: auto;
+    b. bg-cover 	<-->    background-size: cover;
+    c. bg-contain	<-->    background-size: contain;
+
+Background gradient
+    a. bg-none	            <-->    background-image: none;
+    b. bg-gradient-to-t	    <-->    background-image: linear-gradient(to top, var(--tw-gradient-stops));
+    c. bg-gradient-to-tr	<-->    background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+    d. bg-gradient-to-r	    <-->    background-image: linear-gradient(to right, var(--tw-gradient-stops));
+    e. bg-gradient-to-br	<-->    background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+    f. bg-gradient-to-b	    <-->    background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+    g. bg-gradient-to-bl	<-->    background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
+    h. bg-gradient-to-l	    <-->    background-image: linear-gradient(to left, var(--tw-gradient-stops));
+    i. bg-gradient-to-tl	<-->    background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+
+Gradient color
+    from-{color}-{value} 
+    via-{color}-{value}
+    to-{color}-{value}
