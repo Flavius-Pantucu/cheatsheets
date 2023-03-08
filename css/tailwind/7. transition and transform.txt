@@ -1,0 +1,74 @@
+Transition property
+    a. transition-none	    transition-property: none;
+    b. transition-all	    transition-property: all; 
+                            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+                            transition-duration: 150ms;
+    c. transition	        transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+                            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                            transition-duration: 150ms;
+    d. transition-colors    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+                            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                            transition-duration: 150ms;
+    e. transition-opacity   transition-property: opacity;
+                            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                            transition-duration: 150ms;
+    f. transition-shadow	transition-property: box-shadow;
+                            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                            transition-duration: 150ms;
+    g. transition-transform	transition-property: transform;
+                            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                            transition-duration: 150ms;
+
+Transition duration
+    a. duration-75	    transition-duration: 75ms;
+    b. duration-100	    transition-duration: 100ms;
+    c. duration-150	    transition-duration: 150ms;
+    d. duration-200	    transition-duration: 200ms;
+    e. duration-300	    transition-duration: 300ms;
+    f. duration-500	    transition-duration: 500ms;
+    g. duration-700	    transition-duration: 700ms;
+    h. duration-1000	transition-duration: 1000ms;
+
+Transition delay
+    a. delay-75	        transition-delay: 75ms;
+    b. delay-100	    transition-delay: 100ms;
+    c. delay-150	    transition-delay: 150ms;
+    d. delay-200	    transition-delay: 200ms;
+    e. delay-300	    transition-delay: 300ms;
+    f. delay-500	    transition-delay: 500ms;
+    g. delay-700	    transition-delay: 700ms;
+    h. delay-1000	    transition-delay: 1000ms;
+
+Transition type
+    a. ease-linear	    transition-timing-function: linear;
+    b. ease-in	        transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+    c. ease-out	        transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    d. ease-in-out	    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+Animations
+    a. animate-none
+    b. animate-spin	
+    c. animate-ping	
+    d. animate-pulse	
+    e. animate-bounce	
+
+Scale
+    a. scale-{x}	    transform: scale({x}/100);
+    b. scale-x-{x}	    transform: scaleX({x}/100);
+    c. scale-y-{x}	    transform: scaleY({x}/100);
+        {x} -> {0, 50, 75, 90, 95, 100, 105, 110, 125, 150}
+
+Rotate
+    a. rotate-{x}       transform: rotate({x}deg);
+        {x} -> {0, 1, 2, 3, 6, 12, 45, 90, 180}
+
+Transform origin
+    a. origin-center	    transform-origin: center;
+    b. origin-top	        transform-origin: top;
+    c. origin-top-right	    transform-origin: top right;
+    d. origin-right	        transform-origin: right;
+    e. origin-bottom-right	transform-origin: bottom right;
+    f. origin-bottom	    transform-origin: bottom;
+    g. origin-bottom-left	transform-origin: bottom left;
+    h. origin-left	        transform-origin: left;
+    i. origin-top-left	    transform-origin: top left;

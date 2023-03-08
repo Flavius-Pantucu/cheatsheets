@@ -1,0 +1,45 @@
+1. Download and install NodeJS
+
+2. Create project
+	npx create-next-app@latest my-project
+
+3. Creating pages under /pages directory. Creating a subfolder 'test' for example will bind /test route. Any page created under 'test' directory will be accesed via /test/new_page
+
+4. useEffect hook executes a function when the component is loaded or when the component is unmounted
+	useEffect((
+		//setup code
+
+		return () => {
+			//clean-up code
+		};
+	) => {}, [dependencies]);
+	React calls your setup and cleanup functions whenever it’s necessary, which may happen multiple times:
+		1. Your setup code runs when your component is added to the page (mounts).
+		2. After every re-render of your component where the dependencies have changed:
+			a. First, your cleanup code runs with the old props and state.
+			b. Then, your setup code runs with the new props and state.
+		3. Your cleanup code runs one final time after your component is removed from the page (unmounts).
+
+5. useState hook will store the next state, render your component again with the new values, and update the UI.
+
+6. useRef hook. Changing a ref does not trigger a re-render. This means refs are perfect for storing information that doesn’t affect the visual output of your component. For example, if you need to store an interval ID and retrieve it later, you can put it in a ref. To update the value inside the ref, you need to manually change its current property. It can also store an elemenet.
+
+7. Import the global styles.css in your pages/_app.js where these styles will apply to all pages and components in your app
+
+8. Use built in components such as Image, Link, Script
+
+9. Script 'strategy' property     
+	beforeInteractive: load the script before the page is interactive.
+    afterInteractive: load the script immediately after the page becomes interactive.
+    lazyOnload: load the script during idle time.
+
+10. Lazy loading
+	import { lazy } from 'react';
+
+	const CustomComponent = lazy(() => import('./CustomComponent.js'));
+
+11. Suspense
+	<Suspense fallback={<Loading />}>
+  		<SomeComponent />
+	</Suspense>
+	Until SomeComponent is loaded, shows the Loading component
