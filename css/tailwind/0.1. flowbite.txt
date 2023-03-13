@@ -1,0 +1,3 @@
+1. npm install -d flowbite flowbite-react
+2. add depedencies to tailwind.config.js
+3. https://flowbite-react.com/ for custom components
